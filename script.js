@@ -1,3 +1,14 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
-document.querySelector("body").appendChild(h2);
+let blink = document.getElementById("blink");
+blink.addEventListener("mouseover", function( event ) {
+  event.target.style.color = "red";
+   setTimeout(function() {
+      event.target.style.color = "";
+       }, 500);
+       }, false);
+       blink.addEventListener("mouseover", function( event ) {
+         event.target.style.color = "yellow";
+         setTimeout(function() {
+            event.target.style.color = "";
+            }, 500);
+            }, false);
+
